@@ -2,12 +2,28 @@ import logo from './logo.svg';
 import './App.css';
 import Button from "./button";
 import React, {useState, useEffect} from 'react';
+import Name from "./name";
 // hooks
 
 function App() {
 
   const [counter, setCounter] = useState(0);
   const [firstName, setFirstName] = useState('');
+
+  // const [names, setNames] = useState(['John', 'Jane', 'Jack', 'David']);
+  const [names, setNames] = useState([{
+      name: 'John',
+      color: 'red'
+  }, {
+      name: 'Jane',
+      color: 'blue'
+  }, {
+      name: 'Jack',
+      color: 'green'
+  }, {
+      name: 'David',
+      color: 'yellow'
+  }]);
 
   // let counter = 0;
 
@@ -52,6 +68,14 @@ function App() {
 
   };
 
+  const showAlert = async (item) => {
+      // console.log('show alert was clicked')
+      // console.log(item)
+      console.log('the information passed to the parent fromt eh child is', item)
+      // alert(`the item was clicked and the item is ${item.name} `)
+
+  };
+
   return (
     <div className="App">
 
@@ -62,6 +86,37 @@ function App() {
 
       <br/>
       <br/>
+
+      <ul>
+          {names.map((item, idx) => {
+              return <Name obj={item} invokeAlert={showAlert} />
+              // function within a function react on click
+              // return <li key={idx} onClick={() => showAlert(item)} className={item.name=='Jane' ? 'text-red-400 text-xl tracking-wider font-bold' : 'text-xl tracking-wider font-bold'}> {idx}. {item.name}</li>
+          })}
+      </ul>
+
+        <br/>
+        <br/>
+
+        {/*<button className={'bg-blue-500 text-white rounded pl-3 pr-3 pt-4 pb-4'}>Submit</button>*/}
+
+        {/*/!*props*!/ key value pairs that you can pass from the parent to the child*/}
+
+        <Button color={'bg-red-400'} textColor={'text-blue-900'} buttonText={'Click Me'} />
+        <br/>
+        <br/>
+        <Button color={'bg-green-400'} />
+        <br/>
+        <br/>
+        <Button color={'bg-yellow-400'} buttonText={'Enter information'} />
+
+
+        <br/>
+        <br/>
+        <br/>
+
+
+
 
       <input value={firstName} onChange={onInputChange} type="text" className={'border'} placeholder={'Enter your first name'}/>
 
