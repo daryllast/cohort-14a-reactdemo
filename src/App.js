@@ -4,6 +4,7 @@ import Button from "./button";
 import React, {useState, useEffect} from 'react';
 import Name from "./name";
 import Giphy from "./giphy";
+// import Home from './home'
 // hooks
 import {
     BrowserRouter as Router,
@@ -11,6 +12,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import ExpressDemo from "./express-demo";
 
 
 function Home() {
@@ -111,12 +113,18 @@ function App() {
                         <li className={'inline p-5 font-bold'}>
                             <Link to="/users">Users</Link>
                         </li>
+                        <li className={'inline p-5 font-bold'}>
+                            <Link to="/express-demo">Express Demo</Link>
+                        </li>
                     </ul>
                 </nav>
 
                 {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                 <Switch>
+                    <Route path="/express-demo">
+                        <ExpressDemo />
+                    </Route>
                     <Route path="/about">
                         <About />
                     </Route>

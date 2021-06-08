@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="696519f1-bba1-4f5b-9f98-506be9aa639b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/giphy-result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/giphy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/express-demo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +30,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -48,7 +45,8 @@
       <workItem from="1620169166027" duration="6116000" />
       <workItem from="1620342178355" duration="5423000" />
       <workItem from="1620774100063" duration="5408000" />
-      <workItem from="1620947369167" duration="1446000" />
+      <workItem from="1620947369167" duration="3049000" />
+      <workItem from="1623194000593" duration="2561000" />
     </task>
     <servers />
   </component>
